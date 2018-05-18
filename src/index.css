@@ -1,0 +1,1331 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-Bold";
+  src: url("./assets/fonts/AvenirNextCyr-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-BoldItalic";
+  src: url("./assets/fonts/AvenirNextCyr-BoldItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-Demi";
+  src: url("./assets/fonts/AvenirNextCyr-Demi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-DemiItalic";
+  src: url("./assets/fonts/AvenirNextCyr-DemiItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-Heavy";
+  src: url("./assets/fonts/AvenirNextCyr-Heavy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-HeavyItalic";
+  src: url("./assets/fonts/AvenirNextCyr-HeavyItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-Italic";
+  src: url("./assets/fonts/AvenirNextCyr-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-Light";
+  src: url("./assets/fonts/AvenirNextCyr-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-LightItalic";
+  src: url("./assets/fonts/AvenirNextCyr-LightItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-Medium";
+  src: url("./assets/fonts/AvenirNextCyr-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-MediumItalic";
+  src: url("./assets/fonts/AvenirNextCyr-MediumItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-Regular";
+  src: url("./assets/fonts/AvenirNextCyr-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-Thin";
+  src: url("./assets/fonts/AvenirNextCyr-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-ThinItalic";
+  src: url("./assets/fonts/AvenirNextCyr-ThinItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-UltraLight";
+  src: url("./assets/fonts/AvenirNextCyr-UltraLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr-UltraLightIt";
+  src: url("./assets/fonts/AvenirNextCyr-UltraLightIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "thoseicons";
+  src: url("./assets/font-icon/thoseicons.eot?bx7px5");
+  src: url("./assets/font-icon/thoseicons.eot?bx7px5#iefix")
+      format("embedded-opentype"),
+    url("./assets/font-icon/thoseicons.ttf?bx7px5") format("truetype"),
+    url("./assets/font-icon/thoseicons.woff?bx7px5") format("woff"),
+    url("./assets/font-icon/thoseicons.svg?bx7px5#thoseicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "thoseicons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Map-Rose-1:before {
+  content: "\e900";
+}
+
+.icon-Lego-Figure:before {
+  content: "\e901";
+}
+
+.icon-Shit:before {
+  content: "\e902";
+}
+
+.icon-Mask:before {
+  content: "\e903";
+}
+
+.icon-Money-Vision:before {
+  content: "\e904";
+}
+
+.icon-Biscuit:before {
+  content: "\e905";
+}
+
+.icon-Champagne-Bottle:before {
+  content: "\e906";
+}
+
+.icon-Stereo-Speaker:before {
+  content: "\e907";
+}
+
+.icon-Coffee-Can:before {
+  content: "\e908";
+}
+
+.icon-Figs:before {
+  content: "\e909";
+}
+
+.icon-Chat-Bubble-13:before {
+  content: "\e90a";
+}
+
+.icon-Edit-Note-2:before {
+  content: "\e90b";
+}
+
+.icon-Flow-Chart-2:before {
+  content: "\e90c";
+}
+
+.icon-Reload-Folder:before {
+  content: "\e90d";
+}
+
+.icon-Matches:before {
+  content: "\e90e";
+}
+
+.icon-Tea-Sieve:before {
+  content: "\e90f";
+}
+
+/* .icon-Chef\'s-Hat-2:before {
+  content: "\e910";
+} */
+.icon-Image-1:before {
+  content: "\e911";
+}
+
+.icon-Olive:before {
+  content: "\e912";
+}
+
+.icon-Sunrise:before {
+  content: "\e913";
+}
+
+.icon-Chat-Bubble-5:before {
+  content: "\e914";
+}
+
+.icon-Cylinder-Hat:before {
+  content: "\e915";
+}
+
+.icon-Post-It:before {
+  content: "\e916";
+}
+
+.icon-Cloud-Server-2:before {
+  content: "\e917";
+}
+
+.icon-Palette:before {
+  content: "\e918";
+}
+
+.icon-Bow-Tie:before {
+  content: "\e919";
+}
+
+.icon-Box-2:before {
+  content: "\e91a";
+}
+
+.icon-Doctor:before {
+  content: "\e91b";
+}
+
+.icon-Virus:before {
+  content: "\e91c";
+}
+
+.icon-Gameboy-1:before {
+  content: "\e91d";
+}
+
+.icon-Pie-Chart-1:before {
+  content: "\e91e";
+}
+
+.icon-Boots-2:before {
+  content: "\e91f";
+}
+
+.icon-Luggage:before {
+  content: "\e920";
+}
+
+.icon-Door-Lock:before {
+  content: "\e921";
+}
+
+.icon-Volleyball:before {
+  content: "\e922";
+}
+
+.icon-Water-Bottle:before {
+  content: "\e923";
+}
+
+.icon-Pulley:before {
+  content: "\e924";
+}
+
+.icon-Space-Invadors:before {
+  content: "\e925";
+}
+
+.icon-Acid:before {
+  content: "\e926";
+}
+
+.icon-Animal-Badge:before {
+  content: "\e927";
+}
+
+.icon-Chip:before {
+  content: "\e928";
+}
+
+.icon-Toad-Mushroom:before {
+  content: "\e929";
+}
+
+.icon-Bishop:before {
+  content: "\e92a";
+}
+
+.icon-Guitar-1:before {
+  content: "\e92b";
+}
+
+.icon-Mary-Go-Round:before {
+  content: "\e92c";
+}
+
+.icon-Fish:before {
+  content: "\e92d";
+}
+
+.icon-Paws:before {
+  content: "\e92e";
+}
+
+.icon-Key:before {
+  content: "\e92f";
+}
+
+.icon-Lock-Open:before {
+  content: "\e930";
+}
+
+.icon-Baby-Book:before {
+  content: "\e931";
+}
+
+.icon-Stapler:before {
+  content: "\e932";
+}
+
+.icon-Cocktail:before {
+  content: "\e933";
+}
+
+.icon-Pram-1:before {
+  content: "\e934";
+}
+
+.icon-Ball:before {
+  content: "\e935";
+}
+
+.icon-Post-Office:before {
+  content: "\e936";
+}
+
+.icon-House-1:before {
+  content: "\e937";
+}
+
+.icon-House-Key:before {
+  content: "\e938";
+}
+
+.icon-Cutting-Disk:before {
+  content: "\e939";
+}
+
+.icon-Earthquake:before {
+  content: "\e93a";
+}
+
+.icon-Protection-Helmet:before {
+  content: "\e93b";
+}
+
+.icon-Bus-Stop:before {
+  content: "\e93c";
+}
+
+.icon-Toddler-3:before {
+  content: "\e93d";
+}
+
+.icon-Camping-Cup:before {
+  content: "\e93e";
+}
+
+.icon-Drop-Delivery:before {
+  content: "\e93f";
+}
+
+.icon-Paper-Shredder:before {
+  content: "\e940";
+}
+
+.icon-Server-Settings:before {
+  content: "\e941";
+}
+
+.icon-Glue:before {
+  content: "\e942";
+}
+
+.icon-Recycle-Bin:before {
+  content: "\e943";
+}
+
+.icon-Disable-Allarm:before {
+  content: "\e944";
+}
+
+.icon-Kitchen-Timer:before {
+  content: "\e945";
+}
+
+.icon-Plane-Lift-Off:before {
+  content: "\e946";
+}
+
+.icon-Bicycle-1:before {
+  content: "\e947";
+}
+
+.icon-Dog-House:before {
+  content: "\e948";
+}
+
+.icon-Beatle:before {
+  content: "\e949";
+}
+
+.icon-Gear-2:before {
+  content: "\e94a";
+}
+
+.icon-Cloud-Folder-3:before {
+  content: "\e94b";
+}
+
+.icon-Woman-4:before {
+  content: "\e94c";
+}
+
+.icon-Image-Location:before {
+  content: "\e94d";
+}
+
+.icon-Medal-5:before {
+  content: "\e94e";
+}
+
+.icon-Cup-1:before {
+  content: "\e94f";
+}
+
+.icon-Strom-Day:before {
+  content: "\e950";
+}
+
+.icon-Carambola:before {
+  content: "\e951";
+}
+
+.icon-Developer:before {
+  content: "\e952";
+}
+
+.icon-iWatch:before {
+  content: "\e953";
+}
+
+.icon-Chocholate:before {
+  content: "\e954";
+}
+
+.icon-Music-Note-1:before {
+  content: "\e955";
+}
+
+.icon-Drum:before {
+  content: "\e956";
+}
+
+.icon-Headset:before {
+  content: "\e957";
+}
+
+.icon-Fragment-Chart:before {
+  content: "\e958";
+}
+
+.icon-Guitar-Pick:before {
+  content: "\e959";
+}
+
+.icon-Macro:before {
+  content: "\e95a";
+}
+
+.icon-Disable-Flash-Drive:before {
+  content: "\e95b";
+}
+
+.icon-Money-Bill:before {
+  content: "\e95c";
+}
+
+.icon-Lense-2:before {
+  content: "\e95d";
+}
+
+.icon-Stewardess:before {
+  content: "\e95e";
+}
+
+.icon-Cloud-Check:before {
+  content: "\e95f";
+}
+
+.icon-Salt-Pot:before {
+  content: "\e960";
+}
+
+.icon-Camera-1:before {
+  content: "\e961";
+}
+
+.icon-Film-Roll:before {
+  content: "\e962";
+}
+
+.icon-TV-2:before {
+  content: "\e963";
+}
+
+.icon-Half-Moon-2:before {
+  content: "\e964";
+}
+
+.icon-Search-Disk:before {
+  content: "\e965";
+}
+
+.icon-Image-Folder-1:before {
+  content: "\e966";
+}
+
+.icon-Man-with-Beard:before {
+  content: "\e967";
+}
+
+.icon-Clouds:before {
+  content: "\e968";
+}
+
+.icon-Send-Money:before {
+  content: "\e969";
+}
+
+.icon-USB-Cable:before {
+  content: "\e96a";
+}
+
+.icon-Battery-4:before {
+  content: "\e96b";
+}
+
+.icon-User-Smal-Circle:before {
+  content: "\e96c";
+}
+
+.icon-Call:before {
+  content: "\e96d";
+}
+
+.icon-Wind-Turbine:before {
+  content: "\e96e";
+}
+
+.icon-Recycle-Bin-1:before {
+  content: "\e96f";
+}
+
+.icon-Save-Backup:before {
+  content: "\e970";
+}
+
+.icon-Bacon:before {
+  content: "\e971";
+}
+
+.icon-Heandsfree:before {
+  content: "\e972";
+}
+
+.icon-Smartphone-1:before {
+  content: "\e973";
+}
+
+.icon-Feather:before {
+  content: "\e974";
+}
+
+.icon-Mail-1:before {
+  content: "\e975";
+}
+
+.icon-Pencil-with-Ruler:before {
+  content: "\e976";
+}
+
+.icon-Reflect-Vertical:before {
+  content: "\e977";
+}
+
+.icon-Band:before {
+  content: "\e978";
+}
+
+.icon-Condom-1:before {
+  content: "\e979";
+}
+
+.icon-User-Navigation:before {
+  content: "\e97a";
+}
+
+.icon-iWatch-Side:before {
+  content: "\e97b";
+}
+
+.icon-Recycle-PET:before {
+  content: "\e97c";
+}
+
+.icon-Abulance:before {
+  content: "\e97d";
+}
+
+.icon-Spam-Inbox:before {
+  content: "\e97e";
+}
+
+.icon-Presentation_1:before {
+  content: "\e97f";
+}
+
+.icon-Recycle-1:before {
+  content: "\e980";
+}
+
+.icon-Add-to-Basket:before {
+  content: "\e981";
+}
+
+.icon-Presentation:before {
+  content: "\e982";
+}
+
+.icon-Barcode-Scann:before {
+  content: "\e983";
+}
+
+.icon-Protect-Cart:before {
+  content: "\e984";
+}
+
+.icon-Dron-2:before {
+  content: "\e985";
+}
+
+.icon-Personal-Mail:before {
+  content: "\e986";
+}
+
+.icon-Shopping-Bag-3:before {
+  content: "\e987";
+}
+
+.icon-Medicine-2:before {
+  content: "\e988";
+}
+
+.icon-Price-Sticker:before {
+  content: "\e989";
+}
+
+.icon-Eco-User:before {
+  content: "\e98a";
+}
+
+.icon-Envelope-Stack-2:before {
+  content: "\e98b";
+}
+
+.icon-Bit-Coin:before {
+  content: "\e98c";
+}
+
+.icon-Inflation:before {
+  content: "\e98d";
+}
+
+.icon-Camera-Iris-1:before {
+  content: "\e98e";
+}
+
+.icon-VGA-Port:before {
+  content: "\e98f";
+}
+
+.icon-Busines-News:before {
+  content: "\e990";
+}
+
+.icon-Investment:before {
+  content: "\e991";
+}
+
+.icon-Gold-Bars:before {
+  content: "\e992";
+}
+
+.icon-Sphere:before {
+  content: "\e993";
+}
+
+.icon-Mail-Delivered-2:before {
+  content: "\e994";
+}
+
+.icon-Case-1:before {
+  content: "\e995";
+}
+
+body {
+  font-family: "AvenirNextCyr-Regular", "sans-serif";
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* ----------------------------------------------------------------------------------------------------
+
+Super Form Reset
+
+A couple of things to watch out for:
+
+- IE8: If a text input doesn't have padding on all sides or none the text won't be centered.
+- The default border sizes on text inputs in all UAs seem to be slightly different. You're better off using custom borders.
+- You NEED to set the font-size and family on all form elements
+- Search inputs need to have their appearance reset and the box-sizing set to content-box to match other UAs
+- You can style the upload button in webkit using ::-webkit-file-upload-button
+- ::-webkit-file-upload-button selectors can't be used in the same selector as normal ones. FF and IE freak out.
+- IE: You don't need to fake inline-block with labels and form controls in IE. They function as inline-block.
+- By turning off ::-webkit-search-decoration, it removes the extra whitespace on the left on search inputs
+
+----------------------------------------------------------------------------------------------------*/
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  /* Browsers have different default form fonts */
+  font-size: 13px;
+  font-family: Arial;
+}
+
+/* Remove the stupid outer glow in Webkit */
+input:focus {
+  outline: 0;
+}
+
+/* Box Sizing Reset
+-----------------------------------------------*/
+/* All of our custom controls should be what we expect them to be */
+input,
+textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* These elements are usually rendered a certain way by the browser */
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"],
+input[type="checkbox"],
+input[type="radio"],
+select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Text Inputs
+-----------------------------------------------*/
+/* Button Controls
+-----------------------------------------------*/
+input[type="checkbox"],
+input[type="radio"] {
+  width: 13px;
+  height: 13px;
+}
+
+/* File Uploads
+-----------------------------------------------*/
+/* Search Input
+-----------------------------------------------*/
+/* Make webkit render the search input like a normal text field */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+}
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration {
+  display: none;
+}
+
+/* Buttons
+-----------------------------------------------*/
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+  /* Fix IE7 display bug */
+  overflow: visible;
+  width: auto;
+}
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+/* Textarea
+-----------------------------------------------*/
+textarea {
+  /* Move the label to the top */
+  vertical-align: top;
+  /* Turn off scroll bars in IE unless needed */
+  overflow: auto;
+}
+
+/* Selects
+-----------------------------------------------*/
+select[multiple] {
+  /* Move the label to the top */
+  vertical-align: top;
+}
+
+.nav {
+  height: 50px;
+  background: #3f87f5;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.nav-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #3f87f5;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 0;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.nav-nav__isVisible {
+  opacity: 1;
+  width: 100%;
+}
+.nav-nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+.nav-nav__item {
+  display: block;
+  font-size: 18px;
+  font-family: "AvenirNextCyr-Bold";
+  margin-bottom: 30px;
+  color: #fff;
+}
+.nav-nav__link {
+  transition: all 0.2s;
+}
+.nav-nav__link:link,
+.nav-nav__link:visited {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.nav-nav__link:hover,
+.nav-nav__link:active {
+  transform: translateX(1rem);
+}
+.nav-nav__close {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  color: #fff;
+  font-size: 5.4rem;
+  top: 0;
+  left: 2.2rem;
+}
+.nav-nav__close-visible {
+  display: inherit;
+}
+.nav-container {
+  max-width: 102.4rem;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.nav-burger {
+  height: 10.9px;
+  width: 2.4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 1.6rem;
+  cursor: pointer;
+}
+.nav-burger__span {
+  transition: transform 0.2s;
+}
+.nav-burger__span,
+.nav-burger__span:before,
+.nav-burger__span:after {
+  position: relative;
+  display: inline-block;
+  height: 3px;
+  width: 2.4rem;
+  background: #fff;
+}
+.nav-burger__span:before,
+.nav-burger__span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+}
+.nav-burger__span:before {
+  top: -0.8rem;
+}
+.nav-burger__span:after {
+  top: 0.8rem;
+}
+.nav-logo {
+  height: 2.4rem;
+  width: 5.2rem;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.login {
+  padding-top: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.login-divider {
+  font-family: "AvenirNextCyr-Demi";
+  width: 276px;
+  font-size: 14px;
+  display: flex;
+  color: #53535f;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.1rem;
+}
+.login-divider__text {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 180px;
+  font-family: "AvenirNextCyr-Demi";
+  font-size: 14px;
+  color: #53535f;
+}
+.login-divider__line {
+  display: inline-block;
+  width: 43%;
+  height: 1.1px;
+  background: #979797;
+}
+.login-signup {
+  font-size: 14px;
+  color: #53535f;
+  cursor: pointer;
+}
+.login-signup-span {
+  font-family: "AvenirNextCyr-Demi";
+  color: #3f87f5;
+}
+
+.btn {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  outline: none;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.btn::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.btn-login {
+  font-family: "AvenirNextCyr-Demi";
+  font-size: 14px;
+  width: 279px;
+  height: 39px;
+  border-radius: 3px;
+  color: #fff;
+  background: #3f87f5;
+  position: relative;
+}
+.btn-login__icon {
+  position: absolute;
+  left: 12px;
+  font-size: 2.2rem;
+}
+.btn-forgot-pass {
+  font-size: 14px;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  font-size: 50px;
+  color: #3f87f5;
+}
+
+.footer {
+  width: 100%;
+  height: 10rem;
+  background: #53535f;
+  display: flex;
+  justify-content: center;
+}
+.footer-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+}
+.footer-logos {
+  display: flex;
+  flex-basis: 35%;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logos-fb,
+.footer-logos-tg {
+  font-size: 19px;
+  color: #fff;
+}
+.footer-copyright {
+  font-family: "AvenirNextCyr-Regular";
+  color: #fff;
+}
+.footer-copyright-c {
+  font-size: 1.4rem;
+}
+.footer-copyright-a {
+  font-size: 1rem;
+}
+
+.input-group {
+  width: 278px;
+  height: 25px;
+  color: #53535f;
+  font-family: "AvenirNextCyr-Light";
+  font-size: 1.4rem;
+}
+
+.input {
+  font-family: inherit;
+  font-size: inherit;
+  box-sizing: inherit;
+  padding: 4px 0px;
+  color: inherit;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #53535f;
+}
+
+.profile {
+  padding-top: 90px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.profile-star {
+  font-size: 2.2rem;
+  color: #f8e71c;
+  display: inline-block;
+}
+.profile-star:not(:last-child) {
+  margin-right: 2rem;
+}
+.profile-star__light {
+  opacity: 0.2;
+}
+.profile-rankings {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile-rating {
+  margin-bottom: 3.3rem;
+}
+.profile-rank {
+  flex: 1 0 50%;
+  font-family: "AvenirNextCyr-Demi";
+  text-align: center;
+}
+.profile-rank:nth-child(2n) {
+  border-left: 1px solid #979797;
+  margin-bottom: 2.5rem;
+}
+.profile-rank__qty {
+  font-size: 3.6rem;
+  color: #3f87f5;
+}
+.profile-rank__desc {
+  font-size: 1.4rem;
+  color: #53535f;
+}
+.profile-bio {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+.profile-bio__title {
+  font-family: "AvenirNextCyr-Demi";
+  color: #53535f;
+}
+.profile-bio__desc {
+  font-family: "AvenirNextCyr-Regular";
+  color: #979797;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+}
+
+.user-info {
+  text-align: center;
+  color: #53535f;
+}
+.user-info-img {
+  width: 15.9rem;
+  height: 15.9rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 2.2rem;
+}
+.user-info-img > img {
+  display: block;
+  height: 100%;
+}
+.user-info-title {
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+.user-info-position {
+  font-family: "AvenirNextCyr-Regular";
+  font-size: 1.4rem;
+  margin-bottom: 2.6rem;
+}
+
+.leader {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.leader-list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+.leader-heading {
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 18px;
+  color: #53535f;
+  text-align: center;
+  height: 5rem;
+  line-height: 5rem;
+  flex-shrink: 0;
+}
+.leader-item {
+  display: flex;
+  height: 8rem;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "AvenirNextCyr-Demi";
+  font-size: 1.4rem;
+  color: #53535f;
+  padding-left: 0.7rem;
+  padding-right: 2.5rem;
+  flex-shrink: 0;
+}
+.leader-item:hover {
+  background: rgba(63, 135, 245, 0.1);
+}
+.leader-item__rank {
+  margin-right: 1.5rem;
+}
+.leader-item__points {
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 1.8rem;
+  color: #3f87f5;
+}
+.leader-item__img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 2.1rem;
+}
+.leader-item__img > img {
+  display: block;
+  height: 100%;
+}
+.leader-left {
+  flex-basis: 80%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.dropdown {
+  background: #3f87f5;
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  line-height: 5.2rem;
+  flex-shrink: 0;
+}
+.dropdown-list {
+  list-style-type: none;
+}
+.dropdown-item {
+  display: block;
+}
+.dropdown-content {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.dropdown-icon {
+  font-size: 1.2rem;
+}
+
+.hackathons {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.hackathons-heading {
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 18px;
+  color: #53535f;
+  text-align: center;
+  height: 5rem;
+  line-height: 5rem;
+  flex-shrink: 0;
+}
