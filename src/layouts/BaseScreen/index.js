@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import LeftMenuContent from '../../components/LeftMenu';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import Logout from '../../components/Logout';
 
 import MenuIcon from '../../assets/all/menu.svg';
 import NotificationIcon from '../../assets/all/notification.svg';
@@ -107,9 +108,13 @@ class BaseScreen extends Component {
                   hackathon management
                 </span>
               </span>
-              <span>
-                <Icon src={NotificationIcon} style={{ marginRight: '25px' }}/>
-              </span>
+
+              <div>
+                <span>
+                  <Icon src={NotificationIcon} style={{ marginRight: '25px' }}/>
+                </span>
+                <Logout/>
+              </div>
             </NavItems>
           </Header>
           <ContentContainer>
