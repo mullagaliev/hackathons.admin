@@ -70,9 +70,9 @@ class LeftMenu extends Component {
               <Icon src={NoteIcon} alt="Note"/>
               Dashboard
             </LinkItem>
-            <LinkItem to="/manage">
+            <LinkItem to="/messaging">
               <Icon src={ChatIcon} alt="Chat"/>
-              Manage
+              Messaging
             </LinkItem>
           </nav>
         </Fragment>

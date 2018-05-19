@@ -78,7 +78,7 @@ const Content = styled.section`
 
 const ContentInside = styled.div`
    padding: 1em;
-   max-height: calc(100% - 40px - 71px);
+   max-height: calc(100% - 40px);
    overflow: auto;
 `;
 
@@ -117,7 +117,7 @@ class BaseScreen extends Component {
               <LeftMenuContent/>
             </LeftMenu>
             <Content>
-              <Breadcrumbs/>
+              {this.props.breadcrumbs}
               <ContentInside>
                 {this.props.children}
               </ContentInside>
@@ -129,6 +129,8 @@ class BaseScreen extends Component {
 }
 
 BaseScreen.propTypes = {};
-BaseScreen.defaultProps = {};
+BaseScreen.defaultProps = {
+  breadcrumbs: <Breadcrumbs/>
+};
 
 export default BaseScreen;

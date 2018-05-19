@@ -6,6 +6,8 @@ body {
 
 * {
     box-sizing: border-box;
+    font-family: "Muller", sans-serif;
+    font-weight: 400;
 }
 
 .PageTitle {
@@ -29,4 +31,27 @@ body {
     font-size: 14px;
     color: #1F2F46;
     letter-spacing: 0;
+}
+
+.Segment {
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.50);
+    border-radius: 6px;
+    min-height: 60px;
+}
+
+.Segment__title {
+    background: #F0F0F0;
+    border-radius: 6px 6px 0 0;
+    min-height: 40px;
+    padding: 10px 25px;
+}
+
+.Segment__inside {
+    padding: 25px 25px;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
