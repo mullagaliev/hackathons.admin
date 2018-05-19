@@ -1,3 +1,5 @@
+@import "../assets/fonts/Muller/stylesheet.css";
+
 body {
     font-size: 16px;
 }
@@ -11,7 +13,8 @@ body {
 }
 
 .PageTitle__title {
-    font-family: . SFNSDisplay;
+    font-family: "Muller", sans-serif;
+    font-weight: 500;
     font-size: 24px;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -21,7 +24,8 @@ body {
 
 .PageTitle__subtitle {
     opacity: 0.5;
-    font-family: UbuntuMonoDerivativePowerline-Bold;
+    font-family: "Muller", sans-serif;
+    font-weight: 400;
     font-size: 14px;
     color: #1F2F46;
     letter-spacing: 0;
