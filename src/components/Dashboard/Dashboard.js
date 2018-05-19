@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Statstics from '../Statistics';
+import Statistics from '../Statistics';
+import UserList from '../UsersList';
+import { connect } from "react-redux";
+import { getParticipants } from "../../redux/actions/participantsActions";
+
 
 class Dashboard extends Component {
-
+  componentDidMount = () => {
+    setTimeout(() => {
+      this.props.getParticipants();
+    }, 100);
+  };
 
   render() {
+    const { data } = this.props;
     return (
         <div>
-          <Statstics/>
+          <Statistics data={data}/>
+          <UserList data={data}/>
         </div>
     );
   }
@@ -18,4 +28,7 @@ class Dashboard extends Component {
 Dashboard.propTypes = {};
 Dashboard.defaultProps = {};
 
-export default Dashboard;
+export default connect((state) => {
+  return { data: state.participants.data }
+}, { getParticipants })(Dashboard);
+

@@ -21,6 +21,7 @@ const List = styled.div`
     border-radius: 0 6px 6px 0;
     //border-right: 0;
   }
+  margin-bottom: 25px;
 `;
 const Item = styled.div`
   display: flex;
@@ -34,6 +35,7 @@ const Item = styled.div`
   box-shadow: inset 0 0 1px 0 rgba(0,0,0,0.50);
   &:hover{
     background-color: #F0F0F0;
+    cursor: pointer;
   }
   &.active{
     background-color: #F0F0F0;
@@ -44,14 +46,16 @@ const ItemTitle = styled.div`
   margin-left: 25px;
   span{
     display: block;
-    font-family: .SFNSDisplay;
+    font-family: "Muller", sans-serif;
+    font-weight: bold;
     font-size: 36px;
     color: #1F2F46;
     letter-spacing: 0;
   }
   span:last-child{
       opacity: 0.5;
-      font-family: .AppleSystemUIFont;
+      font-family: "Muller", sans-serif;
+      font-weight: normal;
       font-size: 18px;
       color: #1F2F46;
       letter-spacing: 0;
@@ -64,6 +68,7 @@ const Icon = styled.img`
 `;
 
 class Statistics extends Component {
+  const
   render() {
     return (
         <List>

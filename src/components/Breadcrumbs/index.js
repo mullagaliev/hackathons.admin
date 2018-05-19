@@ -8,10 +8,11 @@ const BreadcrumbsContainer = styled.div`
   line-height: 40px;
   padding: 0 25px;
   *{
-    font-family: .AppleSystemUIFont;
+    font-family: "Muller", sans-serif;
     font-size: 14px;
     color: #1F2F46;
     letter-spacing: 0;
+    text-decoration: none;
     &:after{
       content: '/';
       padding: 5px;

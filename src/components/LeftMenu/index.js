@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import NoteIcon from '../../assets/all/note.svg';
 import ChatIcon from '../../assets/all/chat.svg';
-import AvatarIcon from '../../assets/all/avatar.svg';
+import AvatarIcon from '../../assets/img/org.jpeg';
 
 const LinkItem = styled(NavLink)`
    display: flex;
@@ -21,7 +21,8 @@ const LinkItem = styled(NavLink)`
    &.active {
     background-color: #172334;
    }
-   font-family: .AppleSystemUIFont;
+   font-family: "Muller", sans-serif;
+   font-weight: 400;
    font-size: 14px;
    color: #FFFFFF;
    letter-spacing: 0;
@@ -48,7 +49,8 @@ const UserProfile = styled.div`
     margin-right: 20px;
   }
   span{
-    font-family: .AppleSystemUIFont;
+    font-family: "Muller", sans-serif;
+    font-weight: 500;
     font-size: 14px;
     color: #FFFFFF;
     letter-spacing: 0;
@@ -61,16 +63,16 @@ class LeftMenu extends Component {
         <Fragment>
           <UserProfile>
             <img src={AvatarIcon} alt="Avatar"/>
-            <span>UserName</span>
+            <span>AI<br/>community</span>
           </UserProfile>
           <nav>
             <LinkItem to="/dashboard">
               <Icon src={NoteIcon} alt="Note"/>
               Dashboard
             </LinkItem>
-            <LinkItem to="/manage">
+            <LinkItem to="/messaging">
               <Icon src={ChatIcon} alt="Chat"/>
-              Manage
+              Messaging
             </LinkItem>
           </nav>
         </Fragment>

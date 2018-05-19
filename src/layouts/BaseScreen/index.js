@@ -38,12 +38,17 @@ const NavItems = styled.nav`
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
-      font-family: .AppleSystemUIFont;
+      font-family: "Muller", sans-serif;
+      font-weight: 700;
       font-size: 18px;
       color: #FFFFFF;
       letter-spacing: 0;
       text-transform: uppercase;
       cursor: pointer;
+      span{
+        display: block;
+        height: 16px;
+      }
     }
 `;
 
@@ -68,10 +73,13 @@ const Content = styled.section`
    flex: 0 1 auto;
    height: 100%;
    width: 100%;
+   overflow: auto;
 `;
 
 const ContentInside = styled.div`
    padding: 1em;
+   max-height: calc(100% - 40px);
+   overflow: auto;
 `;
 
 const Icon = styled.img`
@@ -95,7 +103,9 @@ class BaseScreen extends Component {
                 this.setState({ menuVisible: !this.state.menuVisible });
               }}>
                 <Icon src={MenuIcon} style={{ marginRight: '25px' }}/>
-                Bot menu
+                <span>
+                  hackathon management
+                </span>
               </span>
               <span>
                 <Icon src={NotificationIcon} style={{ marginRight: '25px' }}/>
@@ -107,7 +117,7 @@ class BaseScreen extends Component {
               <LeftMenuContent/>
             </LeftMenu>
             <Content>
-              <Breadcrumbs/>
+              {this.props.breadcrumbs}
               <ContentInside>
                 {this.props.children}
               </ContentInside>
@@ -119,6 +129,8 @@ class BaseScreen extends Component {
 }
 
 BaseScreen.propTypes = {};
-BaseScreen.defaultProps = {};
+BaseScreen.defaultProps = {
+  breadcrumbs: <Breadcrumbs/>
+};
 
 export default BaseScreen;
