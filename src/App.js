@@ -22,12 +22,12 @@ const App = props => {
             <Route
                 path="/dashboard"
                 exact
-                component={userIsNotAuthenticated(DashboardScreen)}
+                component={userIsAuthenticated(DashboardScreen)}
             />
             <Route
                 path="/messaging"
                 exact
-                component={userIsNotAuthenticated(MessagingScreen)}
+                component={userIsAuthenticated(MessagingScreen)}
             />
             <Route component={LoginScreen}/>
           </Switch>
