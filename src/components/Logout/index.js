@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from "react-redux";
+import { resetAuth } from '../../redux/actions/authActions';
 
 class Logout extends Component {
   render() {
     return (
-        <button>Logout</button>
+        <button onClick={this.props.resetAuth}>Logout</button>
     );
   }
 }
@@ -12,4 +14,6 @@ class Logout extends Component {
 Logout.propTypes = {};
 Logout.defaultProps = {};
 
-export default Logout;
+export default connect((state) => {
+  return { success: state.login.success }
+}, { resetAuth })(Logout);

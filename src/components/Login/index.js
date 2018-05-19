@@ -70,8 +70,6 @@ class Login extends Component {
 
   render() {
     const { login, password } = this.state;
-    if (this.props.success)
-      return <Redirect to='/dashboard'/>;
     return (
         <React.Fragment>
           <LoginForm onSubmit={this.handlerSubmit}>
