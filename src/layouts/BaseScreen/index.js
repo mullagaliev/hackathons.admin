@@ -104,7 +104,7 @@ class BaseScreen extends Component {
               }}>
                 <Icon src={MenuIcon} style={{ marginRight: '25px' }}/>
                 <span>
-                  Bot menu
+                  hackathon management
                 </span>
               </span>
               <span>
