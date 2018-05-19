@@ -2,6 +2,8 @@ import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import moment from 'moment';
+import { connect } from "react-redux";
+import { sendMessage, getHistoryMessages } from '../../redux/actions/messagesActions';
 
 
 const ChatForm = styled.form`
@@ -51,6 +53,8 @@ const ChatMessageList = styled.div`
       display: block;
       margin-bottom: 10px;
       opacity: 0.7;
+      font-size: 12px;
+      text-align: right;
     }
     .ChatMessage__text{
       margin: 0;
@@ -68,6 +72,7 @@ class Chat extends Component {
     console.log(this.refs.message.value);
     const text = this.refs.message.value;
     if (text) {
+      this.props.sendMessage(text);
       this.refs.message.value = '';
       let messages = this.state.messages;
       messages.unshift({
@@ -79,13 +84,19 @@ class Chat extends Component {
     }
   };
 
+  componentDidMount = () => {
+    setTimeout(() => {
+      this.props.getHistoryMessages();
+    }, 100);
+  };
+
   render() {
-    const { messages } = this.state;
+    let messages = [...this.props.messages];
+    messages.reverse();
+    const messagesLocal = this.state.messages;
+    messages.unshift(...messagesLocal);
     return (
         <div className='Segment'>
-          {/*<div className='Segment__title'>*/}
-          {/*Chat*/}
-          {/*</div>*/}
           <div className='Segment__inside'>
             <ChatForm onSubmit={this.handlerSend}>
               <textarea placeholder='Your message' name="message" ref="message"/>
@@ -100,7 +111,7 @@ class Chat extends Component {
                     messages.map((message, key) => {
                       return (<div key={key}>
                         <span
-                            className='ChatMessage__title'>{moment(message.postTimestamp, 'X').format('HH:mm:ss DD/MM/YYYY')}</span>
+                            className='ChatMessage__title'>{moment(message.postTimestamp, 'X').format('HH:mm:ss MMM DD')}</span>
                         <p className='ChatMessage__text'>
                           {message.content}
                         </p>
@@ -117,6 +128,10 @@ class Chat extends Component {
 }
 
 Chat.propTypes = {};
-Chat.defaultProps = {};
+Chat.defaultProps = {
+  messages: []
+};
 
-export default Chat;
+export default connect((state) => {
+  return { messages: state.chatHistory.data ? state.chatHistory.data.messages : [] }
+}, { sendMessage, getHistoryMessages })(Chat);
