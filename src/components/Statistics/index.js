@@ -68,36 +68,48 @@ const Icon = styled.img`
 `;
 
 class Statistics extends Component {
-  const
+  getStatistics = (data) => {
+    return {
+      activated: data.filter((item)=>item.status === "activated").length,
+      applied: data.filter((item)=>item.status === "applied").length,
+      total: data.length,
+      totalXp: data.reduce(function(previousItem, currentItem) {
+        return previousItem.xp + currentItem.xp;
+      }, 0)
+    }
+  };
   render() {
+    const { data } = this.props;
+    console.log(data);
+    const statisticsData = this.getStatistics(data);
     return (
         <List>
           <Item>
             <Icon src={UsersIcon}/>
             <ItemTitle>
-              <span>54</span>
-              <span>Added in chat</span>
+              <span>{statisticsData.total}</span>
+              <span>Total</span>
             </ItemTitle>
           </Item>
           <Item>
             <Icon src={PlusIcon}/>
             <ItemTitle>
-              <span>54</span>
-              <span>Added in chat</span>
+              <span>{statisticsData.applied}</span>
+              <span>Applied</span>
             </ItemTitle>
           </Item>
           <Item>
             <Icon src={OkIcon}/>
             <ItemTitle>
-              <span>54</span>
-              <span>Added in chat</span>
+              <span>{statisticsData.activated}</span>
+              <span>Activated</span>
             </ItemTitle>
           </Item>
           <Item>
             <Icon src={LikeIcon}/>
             <ItemTitle>
-              <span>54</span>
-              <span>Added in chat</span>
+              <span>{statisticsData.totalXp}</span>
+              <span>Total XP</span>
             </ItemTitle>
           </Item>
         </List>
@@ -106,6 +118,8 @@ class Statistics extends Component {
 }
 
 Statistics.propTypes = {};
-Statistics.defaultProps = {};
+Statistics.defaultProps = {
+  data: []
+};
 
 export default Statistics;
