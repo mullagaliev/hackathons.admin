@@ -149,7 +149,7 @@ class UsersList extends Component {
               {
                 Header: 'Email',
                 accessor: 'email',
-                Cell: props => props.value.indexOf('@') > 0 ?
+                Cell: props => props.value && props.value.indexOf('@') > 0 ?
                     <a href={props.value} target="_blank">{props.value}</a> : props.value
               },
               {
