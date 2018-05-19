@@ -8,6 +8,7 @@ const LoginButton = styled.button`
 `;
 
 const LoginForm = styled.form`
+  width: 40%;
   position: absolute;
   left: 50%;
   top: 50%;
