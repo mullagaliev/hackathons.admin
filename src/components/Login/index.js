@@ -92,7 +92,6 @@ class Login extends Component {
 Login.propTypes = {};
 Login.defaultProps = {};
 
-// export default Login;
 export default connect((state) => {
   return { success: state.login.success, token: state.login.data ? state.login.data.token : "" }
 }, { loginByUsername, setAuth })(Login);

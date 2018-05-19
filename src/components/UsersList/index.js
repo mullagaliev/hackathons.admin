@@ -60,107 +60,17 @@ const Table = styled(ReactTable)`
 `;
 
 
-export function makeData() {
-  return [
-    {
-      "id": 5,
-      "username": "Ivan Kamakin",
-      "pic": "https://api.telegram.org/file/bot594797323:AAGaXnxv_lMjtMJHun5_4VuVVJnzEZFNA7k/photos/file_2.jpg",
-      "contactPhone": null,
-      "email": "ivkamakin@gmail.com",
-      "status": "activated",
-      "skills": [
-        "Blockchain",
-        "Front-end"
-      ],
-      "tgProfileLink": "https://t.me/van0k",
-      "isSearchable": true,
-      "xp": "0"
-    },
-    {
-      "id": 8,
-      "username": "Alex Naumov",
-      "pic": "https://api.telegram.org/file/bot594797323:AAGaXnxv_lMjtMJHun5_4VuVVJnzEZFNA7k/photos/file_8.jpg",
-      "contactPhone": null,
-      "email": "aderhjf@gmail.com",
-      "status": "participated",
-      "skills": [
-        "Designer"
-      ],
-      "tgProfileLink": "https://t.me/pomidorosos",
-      "isSearchable": true,
-      "xp": "0"
-    },
-    {
-      "id": 10,
-      "username": "Andrew Mullagaliev",
-      "pic": "https://api.telegram.org/file/bot593557429:AAGIWo2p9VbdWdvNNZf0o2GfgLrCH8zAMdU/photos/file_3.jpg",
-      "contactPhone": null,
-      "email": "email",
-      "status": "participated",
-      "skills": [
-        "Frontend"
-      ],
-      "tgProfileLink": "https://t.me/mullagaliev",
-      "isSearchable": true,
-      "xp": "0"
-    },
-    {
-      "id": 9,
-      "username": "Grigory Novikov",
-      "pic": "https://api.telegram.org/file/bot593557429:AAGIWo2p9VbdWdvNNZf0o2GfgLrCH8zAMdU/photos/file_2.jpg",
-      "contactPhone": null,
-      "email": "Mail@mail.ru",
-      "status": "activated",
-      "skills": [
-        "Blockchain"
-      ],
-      "tgProfileLink": "https://t.me/legendary_emperor",
-      "isSearchable": false,
-      "xp": "0"
-    },
-    {
-      "id": 6,
-      "username": "Roma Maltsev",
-      "pic": "https://api.telegram.org/file/bot594797323:AAGaXnxv_lMjtMJHun5_4VuVVJnzEZFNA7k/photos/file_3.jpg",
-      "contactPhone": null,
-      "email": "No",
-      "status": "activated",
-      "skills": [
-        "Backend"
-      ],
-      "tgProfileLink": "https://t.me/peramor",
-      "isSearchable": true,
-      "xp": "0"
-    },
-    {
-      "id": 7,
-      "username": "Maksim Diakov",
-      "pic": "https://api.telegram.org/file/bot594797323:AAGaXnxv_lMjtMJHun5_4VuVVJnzEZFNA7k/photos/file_6.jpg",
-      "contactPhone": null,
-      "email": "Maximka@gaymail.com",
-      "status": "applied",
-      "skills": [
-        "Frontend",
-        "Designer"
-      ],
-      "tgProfileLink": "https://t.me/diakov2100",
-      "isSearchable": false,
-      "xp": "0"
-    }
-  ];
+function makeData() {
+  return
 }
 
 class UsersList extends Component {
   constructor() {
     super();
-    this.state = {
-      data: makeData()
-    };
   }
 
   render() {
-    const { data } = this.state;
+    const { data } = this.props;
     return (
         <Table
             data={data}
@@ -256,6 +166,8 @@ class UsersList extends Component {
 }
 
 UsersList.propTypes = {};
-UsersList.defaultProps = {};
+UsersList.defaultProps = {
+  data: []
+};
 
 export default UsersList;

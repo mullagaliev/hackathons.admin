@@ -68,6 +68,7 @@ const Icon = styled.img`
 `;
 
 class Statistics extends Component {
+  const
   render() {
     return (
         <List>
