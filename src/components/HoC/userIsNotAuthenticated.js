@@ -5,7 +5,7 @@ const locationHelper = locationHelperBuilder({});
 
 const userIsNotAuthenticated = connectedRouterRedirect({
   redirectPath: (state, ownProps) =>
-    locationHelper.getRedirectQueryParam(ownProps) || "/profile",
+    locationHelper.getRedirectQueryParam(ownProps) || "/dashboard",
 
   allowRedirectBack: false,
 
