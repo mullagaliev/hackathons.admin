@@ -74,7 +74,7 @@ class Statistics extends Component {
       applied: data.filter((item)=>item.status === "applied").length,
       total: data.length,
       totalXp: data.reduce(function(previousItem, currentItem) {
-        return previousItem.xp + currentItem.xp;
+        return Number(previousItem) + Number(currentItem.xp);
       }, 0)
     }
   };
