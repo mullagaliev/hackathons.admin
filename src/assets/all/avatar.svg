@@ -1,0 +1,16 @@
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D-1" transform="translate(-22.000000, -99.000000)">
+            <g id="Group-2" transform="translate(22.000000, 99.000000)">
+                <circle id="Oval" fill="#FFFFFF" cx="19.5" cy="19.5" r="19.5"></circle>
+                <g id="Group" transform="translate(12.000000, 12.000000)" fill="#DFDFDF">
+                    <path d="M11,3.5 C11,5.432875 9.432875,7 7.5,7 C5.567125,7 4,5.432875 4,3.5 C4,1.567125 5.567125,0 7.5,0 C9.432875,0 11,1.567125 11,3.5 Z" id="Stroke-293"></path>
+                    <path d="M7.5,9 C5.11676471,9 2.94970588,9.90342857 1.56352941,10.65 C0.606176471,11.1668571 0,12.1954286 0,13.326 L0,13.8745714 C0,14.4968571 0.479117647,15 1.07117647,15 L13.9288235,15 C14.52,15 15,14.4968571 15,13.8745714 L15,13.326 C15,12.1954286 14.3938235,11.1668571 13.4364706,10.65 C12.0502941,9.90342857 9.88323529,9 7.5,9 Z" id="Stroke-295"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

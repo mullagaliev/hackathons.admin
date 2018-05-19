@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="4px" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-195.000000, -125.000000)" fill="#FFFFFF">
+            <g id="note" transform="translate(183.000000, 115.000000)">
+                <path d="M14,10 L18,10 C19.1045695,10 20,10.8954305 20,12 C20,13.1045695 19.1045695,14 18,14 L14,14 C12.8954305,14 12,13.1045695 12,12 C12,10.8954305 12.8954305,10 14,10 Z" id="Combined-Shape-Copy"></path>
+            </g>
+        </g>
+    </g>
+</svg>

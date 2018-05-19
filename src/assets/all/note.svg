@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="40px" viewBox="0 0 36 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>note</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-185.000000, -115.000000)" fill="#FFFFFF">
+            <g id="note" transform="translate(183.000000, 115.000000)">
+                <path d="M9,4 C7.34314575,4 6,5.34314575 6,7 L6,33 C6,34.6568542 7.34314575,36 9,36 L31,36 C32.6568542,36 34,34.6568542 34,33 L34,7 C34,5.34314575 32.6568542,4 31,4 L9,4 Z M9,0 L31,0 C34.8659932,-1.03620816e-15 38,3.13400675 38,7 L38,33 C38,36.8659932 34.8659932,40 31,40 L9,40 C5.13400675,40 2,36.8659932 2,33 L2,7 C2,3.13400675 5.13400675,0 9,0 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+                <path d="M14,10 L18,10 C19.1045695,10 20,10.8954305 20,12 C20,13.1045695 19.1045695,14 18,14 L14,14 C12.8954305,14 12,13.1045695 12,12 C12,10.8954305 12.8954305,10 14,10 Z" id="Combined-Shape-Copy"></path>
+                <path d="M14,17 L26,17 C27.1045695,17 28,17.8954305 28,19 C28,20.1045695 27.1045695,21 26,21 L14,21 C12.8954305,21 12,20.1045695 12,19 C12,17.8954305 12.8954305,17 14,17 Z" id="Combined-Shape-Copy-2"></path>
+                <path d="M14,24 L26,24 C27.1045695,24 28,24.8954305 28,26 C28,27.1045695 27.1045695,28 26,28 L14,28 C12.8954305,28 12,27.1045695 12,26 C12,24.8954305 12.8954305,24 14,24 Z" id="Combined-Shape-Copy-3"></path>
+            </g>
+        </g>
+    </g>
+</svg>
