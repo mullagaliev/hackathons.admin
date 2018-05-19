@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>notification</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-299.000000, -392.000000)" fill="#FFFFFF">
+            <g id="notification" transform="translate(317.000000, 410.000000) rotate(-180.000000) translate(-317.000000, -410.000000) translate(297.000000, 390.000000)">
+                <rect id="Rectangle-14" x="1" y="7" width="37" height="5" rx="2.5"></rect>
+                <path d="M9,12 L9,24 C9,29.5228475 13.4771525,34 19,34 L21,34 C26.5228475,34 31,29.5228475 31,24 L31,12 L9,12 Z M5,8 L35,8 L35,24 C35,31.7319865 28.7319865,38 21,38 L19,38 C11.2680135,38 5,31.7319865 5,24 L5,8 Z" id="Rectangle-15" fill-rule="nonzero"></path>
+                <path d="M14.9802597,9.28030597 C15.4060507,6.27224765 16.8903396,5 20,5 C23.1096604,5 24.5939493,6.27224765 25.0197403,9.28030597 L28.9802597,8.71969403 C28.2736499,3.72775235 25.0912721,1 20,1 C14.9087279,1 11.7263501,3.72775235 11.0197403,8.71969403 L14.9802597,9.28030597 Z" id="Path-16" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

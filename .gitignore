@@ -9,7 +9,6 @@
 # production
 /build
 
-/src/assets
 
 # misc
 .idea

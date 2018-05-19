@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="38px" viewBox="0 0 40 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>calendar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-465.000000, -117.000000)" fill="#FFFFFF">
+            <g id="calendar" transform="translate(465.000000, 115.000000)">
+                <path d="M32,6 L33.1707317,6 C36.9424324,6 40,9.13400675 40,13 L40,33 C40,36.8659932 36.9424324,40 33.1707317,40 L6.82926829,40 C3.05756756,40 1.73303106e-15,36.8659932 1.73303106e-15,33 L0,13 C0,9.13400675 3.05756756,6 6.82926829,6 L8,6 L8,10 L6.90909091,10 C5.30244436,10 4,11.3431458 4,13 L4,33 C4,34.6568542 5.30244436,36 6.90909091,36 L33.0909091,36 C34.6975556,36 36,34.6568542 36,33 L36,13 C36,11.3431458 34.6975556,10 33.0909091,10 L32,10 L32,6 Z M24,6 L24,10 L16,10 L16,6 L24,6 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+                <rect id="Rectangle-2" x="10" y="2" width="4" height="10" rx="1"></rect>
+                <rect id="Rectangle-2-Copy-3" x="27" y="2" width="4" height="10" rx="1"></rect>
+                <path d="M11,16 L29,16 C30.1045695,16 31,16.8954305 31,18 C31,19.1045695 30.1045695,20 29,20 L11,20 C9.8954305,20 9,19.1045695 9,18 C9,16.8954305 9.8954305,16 11,16 Z" id="Combined-Shape-Copy-2"></path>
+                <path d="M11,24 L29,24 C30.1045695,24 31,24.8954305 31,26 C31,27.1045695 30.1045695,28 29,28 L11,28 C9.8954305,28 9,27.1045695 9,26 C9,24.8954305 9.8954305,24 11,24 Z" id="Combined-Shape-Copy-4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

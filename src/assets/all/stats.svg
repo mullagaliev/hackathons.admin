@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="32px" viewBox="0 0 24 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>stats</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-416.000000, -394.000000)" fill="#FFFFFF">
+            <g id="stats" transform="translate(409.000000, 390.000000)">
+                <path d="M9,20 C10.1045695,20 11,20.8954305 11,22 L11,34 C11,35.1045695 10.1045695,36 9,36 C7.8954305,36 7,35.1045695 7,34 L7,22 C7,20.8954305 7.8954305,20 9,20 Z M19,10 C20.1045695,10 21,10.8954305 21,12 L21,34 C21,35.1045695 20.1045695,36 19,36 C17.8954305,36 17,35.1045695 17,34 L17,12 C17,10.8954305 17.8954305,10 19,10 Z M29,4 C30.1045695,4 31,4.8954305 31,6 L31,34 C31,35.1045695 30.1045695,36 29,36 C27.8954305,36 27,35.1045695 27,34 L27,6 C27,4.8954305 27.8954305,4 29,4 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
