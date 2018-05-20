@@ -1,7 +1,7 @@
 import { connectedRouterRedirect } from "redux-auth-wrapper/history4/redirect";
 
 const userIsAuthenticated = connectedRouterRedirect({
-  redirectPath: "/",
+  redirectPath: "/admin",
 
   authenticatedSelector: state => state.auth.auth === true,
 

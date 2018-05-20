@@ -66,11 +66,11 @@ class LeftMenu extends Component {
             <span>AI<br/>community</span>
           </UserProfile>
           <nav>
-            <LinkItem to="/dashboard">
+            <LinkItem to="/admin/dashboard">
               <Icon src={NoteIcon} alt="Note"/>
               Dashboard
             </LinkItem>
-            <LinkItem to="/messaging">
+            <LinkItem to="/admin/messaging">
               <Icon src={ChatIcon} alt="Chat"/>
               Messaging
             </LinkItem>
