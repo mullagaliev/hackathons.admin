@@ -13,19 +13,19 @@ const App = props => {
       <React.Fragment>
         <Screen>
           <Switch>
-            <Route path="/" exact component={userIsNotAuthenticated(LoginScreen)}/>
+            <Route path="/admin" exact component={userIsNotAuthenticated(LoginScreen)}/>
             <Route
-                path="/login"
+                path="/admin/login"
                 exact
                 component={userIsNotAuthenticated(LoginScreen)}
             />
             <Route
-                path="/dashboard"
+                path="/admin/dashboard"
                 exact
                 component={userIsAuthenticated(DashboardScreen)}
             />
             <Route
-                path="/messaging"
+                path="/admin/messaging"
                 exact
                 component={userIsAuthenticated(MessagingScreen)}
             />
