@@ -1,13 +1,10 @@
 import axios from "axios";
 
-import { setAuth } from "./authActions";
-
 import {
   BASE_URL,
   PARTICIPANTS_REQUEST,
   PARTICIPANTS_SUCCESS,
   PARTICIPANTS_ERROR,
-  TMP_TOKEN
 } from "../constants";
 
 export const participantsRequest = () => ({
@@ -31,14 +28,8 @@ export const getParticipants = (id = 1) => {
     try {
       // console.log(resJson);
       dispatch(participantsRequest);
-      // TODO remove token
-      const res = await axios.get(URL,
-          {
-            headers: {
-              "Authorization": TMP_TOKEN
-            }
-          }
-      );
+      axios.defaults.headers.common["Authorization"] = localStorage.getItem("token");
+      const res = await axios.get(URL, {});
       dispatch(participantsSuccess(res.data));
     } catch (errors) {
       console.log(errors);

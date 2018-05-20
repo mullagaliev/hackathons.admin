@@ -20,5 +20,3 @@ export const MESSAGES_HISTORY_SUCCESS = "MESSAGES_HISTORY_SUCCESS";
 
 
 export const BASE_URL = "https://hackathons.space/api/admin";
-// TODO remove it
-export const TMP_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Im9yZyIsImlhdCI6MTUyNjcwNDkzOCwiZXhwIjoxNTMxODg4OTM4fQ.H51j1iadlF8GDSdeg8NxBSe5KEYzPa9r4XoRMWo1_o0";
