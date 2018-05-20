@@ -1,7 +1,5 @@
 import axios from "axios";
 
-import { setAuth } from "./authActions";
-
 import {
   BASE_URL,
   MESSAGES_REQUEST,
@@ -10,7 +8,6 @@ import {
   MESSAGES_HISTORY_REQUEST,
   MESSAGES_HISTORY_ERROR,
   MESSAGES_HISTORY_SUCCESS,
-  TMP_TOKEN
 } from "../constants";
 
 export const messagesRequest = () => ({
@@ -34,8 +31,9 @@ export const sendMessage = (text) => {
     try {
       // console.log(resJson);
       dispatch(messagesRequest);
-      // TODO remove token
-      axios.defaults.headers.common['Authorization'] = TMP_TOKEN;
+      axios.defaults.headers.common["Authorization"] = localStorage.getItem(
+          "token"
+      );
       const res = await axios.post(URL,
           {
             eventId: 1,
@@ -71,8 +69,9 @@ export const getHistoryMessages = (eventId = 1, lastMessageTimestamp = 1) => {
     try {
       // console.log(resJson);
       dispatch(messagesHistoryRequest);
-      // TODO remove token
-      axios.defaults.headers.common['Authorization'] = TMP_TOKEN;
+      axios.defaults.headers.common["Authorization"] = localStorage.getItem(
+          "token"
+      );
       const res = await axios.get(URL, {});
       dispatch(messagesHistorySuccess(res.data));
     } catch (errors) {
