@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import NoteIcon from '../../assets/all/note.svg';
 import ChatIcon from '../../assets/all/chat.svg';
-import AvatarIcon from '../../assets/img/org.jpeg';
+import AvatarIcon from '../../assets/img/org.png';
 
 const LinkItem = styled(NavLink)`
    display: flex;
@@ -63,7 +63,7 @@ class LeftMenu extends Component {
         <Fragment>
           <UserProfile>
             <img src={AvatarIcon} alt="Avatar"/>
-            <span>AI<br/>community</span>
+            <span>Actum</span>
           </UserProfile>
           <nav>
             <LinkItem to="/admin/dashboard">
