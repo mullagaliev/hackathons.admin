@@ -5,7 +5,6 @@
   "engines": {
     "node": "8.6.0"
   },
-  "homepage": "http://hackathons.space/admin",
   "dependencies": {
     "axios": "^0.18.0",
     "cookies-js": "^1.2.3",
